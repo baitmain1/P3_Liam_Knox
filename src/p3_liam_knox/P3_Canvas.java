@@ -57,7 +57,7 @@ public class P3_Canvas extends JPanel implements KeyListener, MouseListener, Mou
         Graphics2D g2D = (Graphics2D) g;
         super.paintComponent(g2D);//resets screen
 
-        g2D.setFont(restartFont);//play again and exit "buttons"
+        g2D.setFont(restartFont);//exit "button"
         g2D.setColor(Color.GRAY);
         Rectangle2D.Double exitButton = new Rectangle2D.Double(1235, 60, 110, 47);
         g2D.fill(exitButton);
@@ -204,7 +204,7 @@ public class P3_Canvas extends JPanel implements KeyListener, MouseListener, Mou
 
             }
 
-            g2D.setFont(restartFont);//play again and exit "buttons"
+            g2D.setFont(restartFont);//play again "button"
             g2D.setColor(Color.GRAY);
             Rectangle2D.Double restartButton = new Rectangle2D.Double(552, 146, 235, 47);
             g2D.fill(restartButton);
