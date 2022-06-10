@@ -57,6 +57,14 @@ public class P3_Canvas extends JPanel implements KeyListener, MouseListener, Mou
         Graphics2D g2D = (Graphics2D) g;
         super.paintComponent(g2D);//resets screen
 
+        g2D.setFont(restartFont);//play again and exit "buttons"
+        g2D.setColor(Color.GRAY);
+        Rectangle2D.Double exitButton = new Rectangle2D.Double(1235, 60, 110, 47);
+        g2D.fill(exitButton);
+
+        g2D.setColor(Color.BLACK);
+        g2D.drawString("Exit", 1252, 98);
+
         g2D.setPaint(Color.BLACK);//set parameters for the timer and the highScoreTime
         g2D.setFont(timerFont);
         g2D.drawString("Timer: " + count, 50, 100);
@@ -114,7 +122,7 @@ public class P3_Canvas extends JPanel implements KeyListener, MouseListener, Mou
         //darker green square parameters
         x = 200;
         y = 0;
-        
+
         for (int k = 0; k < 2; k++) {//dark green squares in checker pattern opposite to light green
             for (int j = 0; j < 5; j++) {
                 for (int i = 0; i < 5; i++) {
@@ -199,13 +207,10 @@ public class P3_Canvas extends JPanel implements KeyListener, MouseListener, Mou
             g2D.setFont(restartFont);//play again and exit "buttons"
             g2D.setColor(Color.GRAY);
             Rectangle2D.Double restartButton = new Rectangle2D.Double(552, 146, 235, 47);
-            Rectangle2D.Double exitButton = new Rectangle2D.Double(620, 200, 110, 47);
-            g2D.fill(exitButton);
             g2D.fill(restartButton);
 
             g2D.setColor(Color.BLACK);
             g2D.drawString("Play Again?", 558, 180);
-            g2D.drawString("Exit", 637, 238);
 
         }
 
@@ -253,7 +258,7 @@ public class P3_Canvas extends JPanel implements KeyListener, MouseListener, Mou
             setup();//restart the game
             kaboom = false;
             repaint();
-        } else if (kaboom && this.mouseX > 620 && this.mouseX < 730 && this.mouseY > 200 && this.mouseY < 247) {
+        } else if (this.mouseX > 1235 && this.mouseX < 1345 && this.mouseY > 60 && this.mouseY < 107) {
             try {//set file to best score
                 newTime = new FileWriter(bestTime, false);
                 newTime.write(highScoreTime + "");
