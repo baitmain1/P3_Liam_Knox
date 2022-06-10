@@ -10,7 +10,16 @@ There are two actions that you can do while playing minesweeper
 you do this by hovering over the square you want to dig and pressing the letter "d" on your keyboard
 
 2. placing flags:
-3. you do this by hovering over the square you want to place a flag and pressing the letter "f" on your keyboard
+you do this by hovering over the square you want to place a flag and pressing the letter "f" on your keyboard
+
+
+after digging, the numbers on each square represent the number mines that are next to that square
+use this information to determine where is a mine, and where is safe
+
+To win the game you must open every single square that does not contain a mine
+
+
+
 
 
 
