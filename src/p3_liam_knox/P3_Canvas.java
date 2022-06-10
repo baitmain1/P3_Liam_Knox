@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 public class P3_Canvas extends JPanel implements KeyListener, MouseListener, MouseMotionListener, ActionListener {
 
-    //variables
+    // declare variables
     Timer timer;
     int flagsPlaced = 0, count = 0, mouseX, mouseY;
     int[][] layout = new int[10][10], bombs = new int[12][2];
