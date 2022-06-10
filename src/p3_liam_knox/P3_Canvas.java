@@ -493,7 +493,7 @@ public class P3_Canvas extends JPanel implements KeyListener, MouseListener, Mou
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        this.count++;//adds 1 to timer every second
+        this.count++;//adds 1 to the timer every second
         repaint();
     }
 

@@ -12,7 +12,7 @@ import javax.swing.*;
  * @author lknox
  */
 public class P3_App extends JFrame{
-    P3_App() {//creates the JFrame and sets size, location,name... and adds a JPanel
+    P3_App() {//creates the JFrame and sets size, location,name... and adds  JPanel
         super("Minesweeper");
         
         P3_Canvas canvas = new P3_Canvas();

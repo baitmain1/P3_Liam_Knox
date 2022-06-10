@@ -17,7 +17,7 @@ public class P3_Liam_Knox {
     public static void main(String[] args) {
         
         
-        P3_App app = new P3_App();//creates a jFrame
+        P3_App app = new P3_App();//creates  jFrame
         
         
         
