@@ -6,7 +6,7 @@ Rules of MineSweeper:
 
 There are two actions that you can do while playing minesweeper
 
-1: digging the squares:
+1. digging the squares:
 you do this by hovering over the square you want to dig and pressing the letter "d" on your keyboard
 
 2. placing flags:
